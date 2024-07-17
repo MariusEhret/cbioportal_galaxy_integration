@@ -1,0 +1,73 @@
+<tool id="cbioportal" tool_type="interactive" name="Tabulator" version="0.1">
+    <description>cBioPortal tool</description>
+
+    <requirements>
+        <container type="docker">snarry/galaxy_cbioportal:1.0</container>
+    </requirements>
+
+    <entry_points>
+        <entry_point name="cbioportal" requires_domain="True">
+            <port>8080</port>
+
+            <!--
+                 Some apps have a non-root entrypoint.
+                 We can provide the URL with a <url> tag like this:
+                 <url>/my/entrypoint</url>
+             -->
+            <url>/</url>
+
+        </entry_point>
+    </entry_points>
+
+    <environment_variables>
+        <!-- These will be accessible as environment variables inside the Docker container -->
+    </environment_variables>
+
+    <command><![CDATA[
+
+        ## The command will be templated by Cheetah within Galaxy, and
+        ## then run inside the Docker container!
+
+        ## This only works because Galaxy's user data directory is mapped
+        ## onto the Docker container at runtime - enabling access to
+        ## '$infile' and '$outfile' from inside the container.
+
+        shiny-server 2>&1 > /var/log/tuto-gxit-01.log
+        ## The log file can be found inside the container, for debugging purposes
+
+    ]]>
+    </command>
+
+    <inputs>
+    </inputs>
+
+    <outputs>
+        <!--
+            Even if our IT doesn't export to Galaxy history,
+            adding an output ensures to keep track of the IT
+            execution in the history
+        -->
+
+        <data name="file_output" format="txt"/>
+    </outputs>
+
+    <tests>
+        <!-- Tests are difficult with GxITs! -->
+    </tests>
+
+    <help> <![CDATA[
+
+        Some help is always of interest ;)
+
+    ]]></help>
+    <citations>
+        <citation type="bibtex">
+            @misc{
+            author       = {Lain Pavot - lain.pavot@inrae.fr},
+            title        = {first-gxit -  A tool to visualise tsv/csv files},
+            publisher    = {INRAE},
+            url          = {}
+            }
+        </citation>
+    </citations>
+</tool>
