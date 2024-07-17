@@ -20,9 +20,6 @@ RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*-exec.jar)
 
 FROM maven:3-eclipse-temurin-21
 
-# set to noninteractive for apt-get mysql
-#ENV DEBIAN_FRONTEND=noninteractive
-
 # install dependencies / mysql
 RUN apt-get update && apt-get install -y \
     software-properties-common \
