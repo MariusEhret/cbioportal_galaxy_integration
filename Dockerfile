@@ -1,5 +1,5 @@
 # build the cbioportal backend
-FROM maven:3-eclipse-temurin-21 as build_backend
+FROM maven:3-eclipse-temurin-21 AS build_backend
 
 # clone the cbioportal backend repo and checkout the version 6.0.4
 RUN git clone https://github.com/cBioPortal/cbioportal.git
@@ -51,9 +51,11 @@ RUN wget -O /scripts/cgds.sql "https://raw.githubusercontent.com/cBioPortal/cbio
 RUN wget -O /scripts/seed.sql.gz "https://raw.githubusercontent.com/cBioPortal/datahub/e2d892b2950caf0b30cfc2b1b2a9f3d89a7e7a33/seedDB/seed-cbioportal_hg19_hg38_v2.13.1.sql.gz"
 RUN gunzip /scripts/seed.sql.gz
 
+RUN service mysql start && scripts/setup-mysql.sh
+
 # expose backend port
 EXPOSE 8080
 
 # run mysql, initialize the database, start the cbioportal backend
-CMD ["bash", "-c", "service mysql start && /scripts/setup-mysql.sh && cd /cbioportal &&  java -jar app.jar -Dauthenticate=false"]
+CMD ["bash", "-c", "service mysql start && cd /cbioportal &&  java -jar app.jar -Dauthenticate=false"]
 
