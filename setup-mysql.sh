@@ -8,6 +8,11 @@ MYSQL_DATABASE2=cgds_test
 MYSQL_USER=cbio
 MYSQL_PASSWORD=P@ssword1
 
+# add the local_infile setting to my.cnf because it is required for the importer
+echo "Adding local_infile setting to /etc/mysql/my.cnf"
+echo "[mysqld]" >> /etc/mysql/my.cnf
+echo "local_infile=1" >> /etc/mysql/my.cnf
+
 # wait for database to start
 echo "Waiting for MySQL to start..."
 while ! mysqladmin ping -hlocalhost --silent; do
@@ -42,6 +47,7 @@ mysql --user=cbio --password=P@ssword1 cbioportal < /scripts/cgds.sql
 
 # import the seed data
 mysql --user=cbio --password=P@ssword1 cbioportal < /scripts/seed.sql
+#mysql --user=cbio_user --password=somepassword cbioportal < seed-cbioportal_hg19_vX.Y.Z_only-pdb.sql
 
 echo "Database initialized"
 

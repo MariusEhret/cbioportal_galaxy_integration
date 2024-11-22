@@ -51,6 +51,7 @@ RUN chmod +x /scripts/setup-mysql.sh /scripts/startup.sh
 # copy over backend files
 RUN mkdir -p /cbioportal
 COPY --from=build_backend /cbioportal/target/*-exec.jar cbioportal/app.jar
+COPY --from=build_backend /cbioportal /cbioportal
 
 # copy the modified application configuration
 COPY application.properties cbioportal/application.properties
@@ -77,7 +78,7 @@ RUN gunzip /scripts/seed.sql.gz
 RUN service mysql start && scripts/setup-mysql.sh
 
 RUN mkdir data
-COPY study_es_0 data/study_es_0
+COPY mel_tsam_liang_2017 data/study_es_0
 
 
 # expose backend port
