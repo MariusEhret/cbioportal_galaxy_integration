@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <script>
+        function checkServer() {
+            fetch('/import-status')
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Server is ready, redirecting...');
+                        window.location.href = '/';
+                    } else {
+                        console.log('Server not ready, retrying in 5 seconds...');
+                        setTimeout(checkServer, 5000);
+                    }
+                })
+                .catch(error => {
+                    console.log('Error checking server status:', error);
+                    setTimeout(checkServer, 5000);
+                });
+        }
+
+        window.onload = checkServer;
+    </script>
+</head>
+<body>
+<h1>Loading, please wait...</h1>
+</body>
+</html>

@@ -25,5 +25,17 @@ done
 #/venv/bin/python ../core/scripts/migrate_db.py -y -p /cbioportal/application.properties -s /cbioportal/db-scripts/migration.sql
 
 # run the metaImport script
-/venv/bin/python ../core/scripts/importer/metaImport.py -s /data/study_es_0 -u http://localhost:8080 -html myReport.html -o -v -r
+#/venv/bin/python ../core/scripts/importer/metaImport.py -s /data/study_es_0 -u http://localhost:8080 -html myReport.html -o -v -r
+
+
+# iterate over the volume and run the metaImport script for every directory
+for study_dir in /data/*; do
+    if [ -d "$study_dir" ]; then
+        echo "Importing study: $study_dir"
+        /venv/bin/python ../core/scripts/importer/metaImport.py -s "$study_dir" -u http://localhost:8080 -html myReport.html -o -v -r
+    fi
+done
+# create a file to indicate the completion of the metaImport script
+touch /var/run/meta_import_complete
+
 /bin/bash
