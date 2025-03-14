@@ -17,6 +17,18 @@ RUN mvn dependency:go-offline --fail-never
 RUN mvn install package -DskipTests -q
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*-exec.jar)
 
+FROM alpine:3.18 AS gene_panels
+# Install Git and Git LFS
+RUN apk add --no-cache git git-lfs
+
+# clone the datahub repo for common gene panels
+RUN git lfs install --skip-repo --skip-smudge
+RUN git clone https://github.com/cBioPortal/datahub.git
+WORKDIR /datahub
+RUN git lfs install --skip-repo --skip-smudge
+
+# pull the gene panels
+RUN git lfs pull -I reference_data/gene_panels
 
 FROM eclipse-temurin:21
 
@@ -40,14 +52,13 @@ RUN apt-get update && apt-get install -y \
     nginx \
     && rm -rf /var/lib/apt/lists/*
 
-# create a virtual environment for python
+# create a virtual environment for python - we cant use the system version because it has conflicts
 RUN python3 -m venv venv
 
-# copy the mysql setup script as well as the startup script and make it executable
+# copy the mysql setup script  and make it executable
 RUN mkdir -p /scripts
 COPY setup-mysql.sh /scripts/
-COPY startup.sh /scripts/
-RUN chmod +x /scripts/setup-mysql.sh /scripts/startup.sh
+RUN chmod +x /scripts/setup-mysql.sh
 
 # copy over backend files
 RUN mkdir -p /cbioportal
@@ -76,14 +87,18 @@ RUN wget -O /scripts/cgds.sql "https://raw.githubusercontent.com/cBioPortal/cbio
 RUN wget -O /scripts/seed.sql.gz "https://raw.githubusercontent.com/cBioPortal/datahub/e2d892b2950caf0b30cfc2b1b2a9f3d89a7e7a33/seedDB/seed-cbioportal_hg19_hg38_v2.13.1.sql.gz"
 RUN gunzip /scripts/seed.sql.gz
 
-RUN service mysql start && scripts/setup-mysql.sh
+# copy over the gene panels
+COPY --from=gene_panels /datahub/reference_data/gene_panels /scripts/gene_panels
 
-RUN mkdir data
-COPY test_studies/mel_tsam_liang_2017 data/study_es_0
+RUN service mysql start && scripts/setup-mysql.sh
 
 # copy nginx configuration and loading page
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY loading-page.html /usr/share/nginx/html/loading-page.html
+
+# copy startup script and make it executable
+COPY startup.sh /scripts/
+RUN chmod +x /scripts/startup.sh
 
 # expose backend port and nginx
 EXPOSE 8080 80

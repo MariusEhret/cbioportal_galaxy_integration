@@ -1,0 +1,4 @@
+stable_id: prad_mskcc_sequenom
+description: Targeted panel of 21 genes.
+gene_list: ALK	APC	ARAF	BMPR1A	BRAF	CTNNB1	EGFR	ERBB2	FGFR1	FGFR2	FGFR4	HRAS	IDH1	KIT	KRAS	MAP2K1	NRAS	PDGFRA	PIK3CA	RET	STK11
+number_of_profiled_coding_base_pairs: 54336

@@ -1,0 +1,44 @@
+PATIENT_ID	START_DATE	STOP_DATE	EVENT_TYPE	STATUS
+P-1	847		Status	Date Targeted Progression
+P-1	851		Status	DECEASED
+P-10	383		Status	Date Anti PDL1 Progression
+P-10	583		Status	DECEASED
+P-11	529		Status	Date IPI Progression
+P-15	935		Status	Date IPI Progression
+P-15	1578		Status	DECEASED
+P-16	1568		Status	Date IPI Progression
+P-16	1407		Status	Date Targeted Progression
+P-17	5479		Status	Date IPI Progression
+P-17	4398		Status	Date Anti PDL1 Progression
+P-19	2091		Status	Date IPI Progression
+P-19	2856		Status	Date Anti PDL1 Progression
+P-19	2653		Status	Date Targeted Progression
+P-19	2933		Status	DECEASED
+P-2	1548		Status	Date IPI Progression
+P-2	1478		Status	Date Targeted Progression
+P-20	2831		Status	Date IPI Progression
+P-20	2831		Status	Date Targeted Progression
+P-20	2964		Status	DECEASED
+P-21	728		Status	Date IPI Progression
+P-21	729		Status	DECEASED
+P-22	1334		Status	Date IPI Progression
+P-23	211		Status	Date IPI Progression
+P-25	1176		Status	Date IPI Progression
+P-25	2539		Status	Date Targeted Progression
+P-25	1341		Status	DECEASED
+P-26	617		Status	Date IPI Progression
+P-28	2711		Status	Date Anti PDL1 Progression
+P-29	315		Status	Date IPI Progression
+P-31	-35		Status	Date IPI Progression
+P-32	2024		Status	Date IPI Progression
+P-32	2055		Status	DECEASED
+P-4	1010		Status	Date IPI Progression
+P-4	606		Status	Date Anti PDL1 Progression
+P-5	579		Status	Date IPI Progression
+P-6	1936		Status	Date IPI Progression
+P-6	2409		Status	Date Anti PDL1 Progression
+P-6	2653		Status	Date Targeted Progression
+P-8	1713		Status	Date IPI Progression
+P-8	2408		Status	Date Anti PDL1 Progression
+P-8	2542		Status	Date Targeted Progression
+P-8	407		Status	DECEASED

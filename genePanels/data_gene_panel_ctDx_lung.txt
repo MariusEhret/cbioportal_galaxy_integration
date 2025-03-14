@@ -1,0 +1,5 @@
+cancer_study_identifier: lung_ctdx_msk_2021
+stable_id: ctDx_lung_panel
+description: Targeted sequencing of 18 genes via Resolution ctDx Lung assay.
+gene_list: AKT1	ALK	B2M	BRAF	EGFR	ERBB2	FGFR2	FGFR3	KEAP1	KRAS	MAP2K1	MET	NRAS	PIK3CA	RET	ROS1	STK11	TP53
+number_of_profiled_coding_base_pairs: 45651
