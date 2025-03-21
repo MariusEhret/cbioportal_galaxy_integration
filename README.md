@@ -18,8 +18,9 @@ To import data into cBioPortal you need to provide a directory with the followin
 - studies (you should put all study directories that you want to import here)
 - gene_panels (incase your studies need special gene panels, you can put them here directly to import them)
 
+The importTest directory provided in this repo contains a few working sample studies downloaded from the official cBioPortal website.
 ## 3. Run the Docker Container:
-### ```docker run -v /pathtoimportvolume:/import -p 80:80 cbioportal```
+### ```docker run -v /path/to/import/volume:/import -p 80:80 cbioportal```
 This will start the cBioPortal application and import all studies/genesets from the mounted /import directory.
 ## 4. Open the application:
 ### http://localhost:80
