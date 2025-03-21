@@ -18,7 +18,7 @@ RUN mvn install package -DskipTests -q
 RUN mkdir -p target/dependency && (cd target/dependency; jar -xf ../*-exec.jar)
 
 FROM alpine:3.18 AS gene_panels
-# Install Git and Git LFS
+# install Git and Git LFS
 RUN apk add --no-cache git git-lfs
 
 # clone the datahub repo for common gene panels
@@ -87,7 +87,7 @@ RUN wget -O /scripts/cgds.sql "https://raw.githubusercontent.com/cBioPortal/cbio
 RUN wget -O /scripts/seed.sql.gz "https://raw.githubusercontent.com/cBioPortal/datahub/e2d892b2950caf0b30cfc2b1b2a9f3d89a7e7a33/seedDB/seed-cbioportal_hg19_hg38_v2.13.1.sql.gz"
 RUN gunzip /scripts/seed.sql.gz
 
-# copy over the gene panels
+# copy over the gene panels from the cbioportal datahub
 COPY --from=gene_panels /datahub/reference_data/gene_panels /scripts/gene_panels
 
 RUN service mysql start && scripts/setup-mysql.sh
@@ -103,6 +103,5 @@ RUN chmod +x /scripts/startup.sh
 # expose backend port and nginx
 EXPOSE 8080 80
 
-# run mysql, initialize the database, start the cbioportal backend and nginx
+# run mysql, start cbioportal and nginx, import the studies into the database
 CMD service mysql start && /scripts/startup.sh & nginx -g 'daemon off;'
-#CMD ["bash", "/scripts/startup.sh"]
