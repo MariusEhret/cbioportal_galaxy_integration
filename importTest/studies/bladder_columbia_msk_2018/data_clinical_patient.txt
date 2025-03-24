@@ -1,0 +1,27 @@
+#Patient Identifier	Sex	Pathological Classification of Parental Tumor Sample	Tumor Stage	Ethinicity	Age	Smoking Status	Prior Intravesical Therapy	Orthotopic Xenograft Information
+#Patient Identifier	Sex	Pathological Classification of Parental Tumor Sample	Tumor Stage	Ethinicity	Age	Smoking Status	Prior Intravesical Therapy	Orthotopic Xenograft Information
+#STRING	STRING	STRING	STRING	STRING	NUMBER	STRING	STRING	STRING
+#1	1	1	1	1	1	1	1	1
+PATIENT_ID	SEX	PATHOLOGICAL_CLASSIFICATION_OF_PARENTAL_TUMOR_SAMPLE	TUMOR_STAGE	ETHINICITY	AGE	SMOKING_STATUS	PRIOR_INTRAVESICAL_THERAPY	ORTHOTOPIC_XENOGRAFT_INFORMATION
+SCBO-1	Female	High-grade papillary urothelial carcinoma, non-invasive	Ta	Caucasian	62	Never	Docetaxel	Yes
+SCBO-10	Male	High-grade urothelial carcinoma, non-invasive	T2	Caucasian	82	Former	None	Yes
+SCBO-11_2	Male	Squamous cell carcinoma, non-invasive	T1	Caucasian	84	Never	None	Yes
+SCBO-11_3	Male	Atypical squamous lesion (dysplasia)	Ta	Caucasian	84	Never	None	no growth
+SCBO-11	Male	Squamous cell carcinoma	T1+CIS	Caucasian	83	Never	None	Yes
+SCBO-12	Male	Low-grade papillary urothelial carcinoma, non-invasive	Ta	N/A	58	Former	None	no growth
+SCBO-13	Male	High-grade urothelial carcinoma, non-invasive	T1+CIS	Asian	48	Former	None	NA
+SCBO-14	Male	Low-grade papillary urothelial carcinoma, non-invasive	Ta	Caucasian	84	Former	MMC	Yes
+SCBO-15	Female	Invasive high-grade urothelial carcinoma	T3	Caucasian	81	Active	None	Yes
+SCBO-16	Male	High-grade papillary urothelial carcinoma, non-invasive	Ta+CIS	Caucasian	62	Never	None	NA
+SCBO-2	Male	Low-grade papillary urothelial carcinoma, non-invasive	T2	Caucasian	79	Former	None	Yes
+SCBO-3_2	Male	Low-grade papillary urothelial carcinoma, non-invasive	Ta	African-American	78	Former	Docetaxel, MMC, BCG	Yes
+SCBO-3	Male	Low-grade papillary urothelial carcinoma, non-invasive	T1	African-American	76	Former	Docetaxel	Yes
+SCBO-4	Female	Invasive high-grade urothelial carcinoma	T2	Caucasian	72	Former	BCG, BCG/IFN	no growth
+SCBO-5	Male	High-grade urothelial carcinoma, non-invasive	T1+CIS	Hispanic	84	Former	None	Yes
+SCBO-6	Male	Invasive high-grade urothelial carcinoma	T1+CIS	Caucasian	80	Former	MMC, BCG	Yes
+SCBO-7_2	Female	High-grade papillary urothelial carcinoma, non-invasive	Ta	Caucasian	78	Former	None	Yes
+SCBO-7	Female	Low-grade papillary urothelial carcinoma, non-invasive	Ta	Caucasian	77	Former	None	Yes
+SCBO-8	Male	High-grade urothelial carcinoma in situ (flat), non-invasive	Ta	Caucasian	83	Active	BCG	Yes
+SCBO-9	Female	Low-grade papillary urothelial carcinoma, non-invasive	T1	Caucasian	68	Never	None	Yes
+SMBO-1	Male	High-grade urothelial carcinoma	T3	Caucasian	64	Former	None	Yes
+SMBO-2	Male	Invasive high-grade urothelial carcinoma	T3	Caucasian	86	Never	None	Yes

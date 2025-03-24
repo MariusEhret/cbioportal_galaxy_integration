@@ -8,6 +8,10 @@ MYSQL_DATABASE2=cgds_test
 MYSQL_USER=cbio
 MYSQL_PASSWORD=P@ssword1
 
+# add the local_infile setting to my.cnf because it is required for the importer
+echo "[mysqld]" >> /etc/mysql/my.cnf
+echo "local_infile=1" >> /etc/mysql/my.cnf
+
 # wait for database to start
 echo "Waiting for MySQL to start..."
 while ! mysqladmin ping -hlocalhost --silent; do
@@ -45,5 +49,13 @@ mysql --user=cbio --password=P@ssword1 cbioportal < /scripts/seed.sql
 
 echo "Database initialized"
 
+# import all basic gene panels
+cd /core/scripts
+echo "Starting import for gene Panels..."
+for genePanel in /scripts/gene_panels/*; do
+    echo "Importing gene panel: $genePanel"
+    perl importGenePanel.pl --data "$genePanel"
+done
+echo "Gene Panel import complete."
 # mark the script as completed
 touch /var/lib/mysql/.initialized

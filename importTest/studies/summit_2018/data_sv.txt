@@ -1,0 +1,2 @@
+Sample_Id	Site1_Hugo_Symbol	Site2_Hugo_Symbol	Event_Info	DNA_support	SV_Status
+34	ERBB2	GRB7	ERBB2-GRB7 fusion	yes	SOMATIC

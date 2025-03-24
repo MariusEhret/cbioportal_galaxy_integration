@@ -1,0 +1,38 @@
+PATIENT_ID	START_DATE	STOP_DATE	EVENT_TYPE	TREATMENT_TYPE	SUBTYPE	AGENT	TREATMENT_BEST_RESPONSE	NOTE
+P-2	1547	1548	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PR	No end date
+P-4	862	1010	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	?SD/PD	
+P-5	404	579	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	SD	
+P-6	1812	1936	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PD	
+P-8	1579	1713	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PD	
+P-11	444	529	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PD	
+P-15	909	935	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PD	
+P-16	1539	1568	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PD	
+P-17	3699	5479	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PR with ILI	
+P-19	2024	2091	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PD	
+P-20	2656	2831	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PR	
+P-21	569	728	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PD	
+P-22	1273	1334	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PR	
+P-23	190	211	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PD	
+P-25	1086	1176	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PD	
+P-26	554	617	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	CR	
+P-29	252	315	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PR	
+P-31	425	-35	Treatment	Medical Therapy	Immunotherapy	Ipilimumab	PR	End date incorrect
+P-32	1961	2024	Treatment	Medical Therapy	Immunotherapy	Ipilimumab		
+P-4	508	606	Treatment	Medical Therapy	Immunotherapy	Nivolumab	PD	
+P-5	776	777	Treatment	Medical Therapy	Immunotherapy	Pembrolizumab	CR	No end date
+P-6	2282	2409	Treatment	Medical Therapy	Immunotherapy	Nivolumab	Brief SD	
+P-8	2256	2408	Treatment	Medical Therapy	Immunotherapy	Pembrolizumab	PD	
+P-11	297	383	Treatment	Medical Therapy	Immunotherapy	MPDL3280A	PD	
+P-17	4153	4398	Treatment	Medical Therapy	Immunotherapy	MK-3475	PR	
+P-19	2786	2856	Treatment	Medical Therapy	Immunotherapy	MK-3475	PD	
+P-28	820	2711	Treatment	Medical Therapy	Immunotherapy	Ipi+pd1	PD +toxicity	
+P-29	448	449	Treatment	Medical Therapy	Immunotherapy	Nivo	CR	No end date
+P-31	698	699	Treatment	Medical Therapy	Immunotherapy	Pembro	PR	No end date
+P-1	821	847	Treatment	Medical Therapy	Target Therapy	Trametinib	PD	
+P-2	1198	1478	Treatment	Medical Therapy	Target Therapy	Vem/cobi	PR	
+P-6	2486	2653	Treatment	Medical Therapy	Target Therapy	MEKi/AKTi	SD	
+P-8	2486	2542	Treatment	Medical Therapy	Target Therapy	MEKi/AKTi	PD	
+P-16	1128	1407	Treatment	Medical Therapy	Target Therapy	Dab/Tram	PR	
+P-19	2625	2653	Treatment	Medical Therapy	Target Therapy	Trametinib + AKT/ProteinKinase B	PD	
+P-20	2628	2831	Treatment	Medical Therapy	Target Therapy	Vem + ipi	PR with ipi	
+P-25	1025	2539	Treatment	Medical Therapy	Target Therapy	Vem	PR	End date in 2017?
