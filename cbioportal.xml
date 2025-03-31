@@ -1,13 +1,13 @@
 <tool id="cbioportal" tool_type="interactive" name="Tabulator" version="0.1">
-    <description>cBioPortal tool</description>
+    <description>cBioPortal</description>
 
     <requirements>
-        <container type="docker">snarry/galaxy_cbioportal:1.0</container>
+        <container type="docker">ehretmarius/cbioportal:latest</container>
     </requirements>
 
     <entry_points>
         <entry_point name="cbioportal" requires_domain="True">
-            <port>8080</port>
+            <port>80</port>
 
             <!--
                  Some apps have a non-root entrypoint.
@@ -22,6 +22,10 @@
     <environment_variables>
         <!-- These will be accessible as environment variables inside the Docker container -->
     </environment_variables>
+
+    <volume>
+        <mount source="$input" target="/import" type="directory"/>
+    </volume>
 
     <command><![CDATA[
 
@@ -39,6 +43,7 @@
     </command>
 
     <inputs>
+        <param name="import" type="data" format="directory" label="Input Folder" help="Select an import folder structured as described in https://github.com/MariusEhret/cbioportal_docker"/>
     </inputs>
 
     <outputs>
@@ -63,10 +68,10 @@
     <citations>
         <citation type="bibtex">
             @misc{
-            author       = {Lain Pavot - lain.pavot@inrae.fr},
-            title        = {first-gxit -  A tool to visualise tsv/csv files},
-            publisher    = {INRAE},
-            url          = {}
+            author       = {Marius Ehret - ehret.marius@gmail.com},
+            title        = {cbioportal},
+            publisher    = {},
+            url          = {https://github.com/MariusEhret/cbioportal_galaxy_integration}
             }
         </citation>
     </citations>
