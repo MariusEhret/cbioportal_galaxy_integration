@@ -26,3 +26,14 @@ This will start the cBioPortal application and import all studies/genesets from 
 ### http://localhost:80
 You will first be greeted with a loading screen, as the application is still importing the data / starting up.
 Once the import is complete, you will be redirected to the cBioPortal homepage.
+
+# Using it in your Galaxy instance
+## 1. Copy the tool
+Copy "interactivetool_cbioportal.xml" into galaxy/tools/interactive
+## 2. Update tool config
+Update your tool config under galaxy/config/tool_conf.xml to include cbioportal under the Interactive Tool section like this:
+```
+<section id="interactivetools" name="Interactive Tools">
+    <tool file="interactive/interactivetool_cbioportal.xml" />
+</section>
+```
