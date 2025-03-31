@@ -1,0 +1,39 @@
+#Patient Identifier	Kbase Identifier	Overall Survival (Months)	Overall Survival Status	Disease Free (Months)	Disease Free Status	Metastasis	OR Date	Primary melanoma tumor ulceration	Lymph Node(s) Examined Number	Sex	Race Category	Age at Diagnosis	Time to Recurrence (months)	Site First Recurrence	Follow up time months	Treatment	In Transit	Did patient start adjuvant postoperative radiotherapy?	Other Alternative Therapy Given	Other Treatment Responses
+#Identifier to uniquely specify a patient.	Kbase Identifier	Overall survival in months since initial diagonosis.	Overall patient survival status.	Disease free (months) since initial treatment.	Disease free status since initial treatment.	Metastasis.	OR Date from Diagnosis	Melanoma ulceration indicator	The total number of lymph nodes removed and pathologically assessed for disease.	Sex	The text for reporting information about race.	Age at Diagnosis	Time to Recurrence (months)	Site First Recurrence	Follow up time months	Treatment	In Transit	A yes/no indicator that asks whether the patient started adjuvant postoperative radiotherapy.	Other Alternative Therapy Given	Other Treatment Responses
+#STRING	STRING	NUMBER	STRING	NUMBER	STRING	STRING	NUMBER	STRING	NUMBER	STRING	STRING	NUMBER	NUMBER	STRING	NUMBER	STRING	STRING	STRING	STRING	STRING
+#1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+PATIENT_ID	KBASE_ID	OS_MONTHS	OS_STATUS	DFS_MONTHS	DFS_STATUS	METASTASIS	OR_TIME	PRIMARY_MELANOMA_TUMOR_ULCERATION	LYMPH_NODE_EXAMINED_COUNT	SEX	RACE	AGE_AT_DIAGNOSIS	TIME_TO_RECURRENCE_MONTHS	SITE_FIRST_RECURRENCE	FOLLOW_UP_TIME_MONTHS	TREATMENT	IN_TRANSIT	RADIATION_TREATMENT_ADJUVANT	ALTERNATE_THERAPY_OTHER	OTHER_TREATMENT_RESPONSE
+P-1	1	28.0	1:DECEASED	21.0	1:Recurred/Progressed	No	21.0	No	0.0	Female	Caucasian	77	21.0	Inguinal LN	28.0	No	No	No		
+P-2	2	60.3	0:LIVING	29.1	1:Recurred/Progressed	Yes	1.4	No	2.0	Female	Caucasian	67	29.1	Inguinal LN	60.3	No	No	No		
+P-3	3	41.0	1:DECEASED	13.3	1:Recurred/Progressed	Yes	16.1	Yes	1.0	Female	Caucasian	77	13.3	Leg	41.0	No	Yes	No		
+P-4	4	34.1	0:LIVING	5.5	1:Recurred/Progressed	Yes	20.9	No	9.0	Male	Caucasian	39	5.5	Lung	34.0	IL-2, ipi	No	No (radiation)	IL-2	Brief SD
+P-5	5	101.4	0:LIVING	32.6	1:Recurred/Progressed	Yes	82.2	Yes	3.0	Male	Caucasian	47	32.6	Arm in-transit	101.4	Biochemo, limb infusion, ipi, IL-2, BCG, pembrolizumab, MEK/AKTi	Yes	Biochemotherapy	IL-2, limb infusion, repeat nivolumab, TIL infusion, CVT	
+P-6	6	45.6	0:LIVING	10.7	0:DiseaseFree	No	14.3	No	2.0	Male	Caucasian	56	10.7	Inguinal LN	45.6	No	No	Ipilimumab		
+P-7	7	85.9	1:DECEASED	51.2	1:Recurred/Progressed	Yes	81.7	Yes	1.0	Male	Caucasian	46	51.2	Lung	85.9	IFN, Ipi, TM, carbo/taxol, IL-2, pembrolizumab	No	Interferon	IL-2, carbo/taxol, TMZ	
+P-8	8	13.4	1:DECEASED	10.8	1:Recurred/Progressed	Yes	1.0	Yes	2.0	Female	Caucasian	59	10.8	Brain	13.4	No	No	Ipilimumab		
+P-9	9	15.4	1:DECEASED	9.8	1:Recurred/Progressed	No	1.2	Yes		Female	Caucasian	86	9.8	Axillary LN	15.4	No	No	No		
+P-10	10	19.2	1:DECEASED	9.6	1:Recurred/Progressed	Yes	1.8	Yes	0.0	Male	Caucasian	78	9.6	Inguinal LN	19.2	No	Yes	No	MLN8237	
+P-11	11	27.7	0:LIVING	27.3	0:DiseaseFree	No	1.3	Yes	5.0	Male	Caucasian	71			27.7	No	No	Ipilimumab		
+P-12	12	18.0	1:DECEASED	13.6	1:Recurred/Progressed	Yes	1.7	Yes	1.0	Male	Caucasian	42	13.6	Inguinal LN	18.0	No	No	No	IL-2 (no response)	No response
+P-13	13	18.4	0:LIVING	18.4	0:DiseaseFree	No	0.9	Yes	1.0	Male	Caucasian	59			18.4	No	No	No		
+P-14	14	30.6	1:DECEASED	19.1	1:Recurred/Progressed	Yes	24.0	Yes	3.0	Female	African American	60	19.1	Leg in-transit	30.6	No	Yes	No	MLN8237	
+P-15	15	51.9	1:DECEASED	20.0	1:Recurred/Progressed	Yes	0.5	No	1.0	Male	Caucasian	50	20.0	Leg in-transit	51.9	No	Yes	Interferon		
+P-16	16	125.7	0:LIVING	16.6	0:DiseaseFree	No	16.6	Yes	0.0	Male	Caucasian	29	16.6	Oburator LN	125.7	GM-CSF vs. placebo	No	Interferon		
+P-17	18	162.6	0:LIVING	120.3	1:Recurred/Progressed	Yes	0.6	No	0.0	Female	African American	53	120.3	in transit	162.6	limb infusion, ipi, pd1, cvt	Yes	No	CVT, surgery	prolonged SD, vitiligo)
+P-18	19	101.7	0:LIVING	107.1	0:DiseaseFree	No	1.2	Yes	0.0	Male	Caucasian	37			101.7		No			
+P-19	20	96.5	1:DECEASED	28.8	1:Recurred/Progressed	Yes	0.0	Yes	2.0	Male	African American	47	28.8	in transit	96.5	tem,ipi, carbo taxol, CVT	Yes	No	carvo/taxol, temodar, CVT, DTIC	PR
+P-20	21	97.5	1:DECEASED	38.2	1:Recurred/Progressed	Yes	41.8	Yes	1.0	Female	African American(Haitan)	54	38.2	in transit	97.5	temodar, limb infusion	Yes	Yes	vaccine	temodar:PD
+P-21	22	24.0	1:DECEASED	7.6	1:Recurred/Progressed	Yes	0.5	No	1.0	Male	Caucasian	56	7.6	in transit spine	23.9	ipi, radiation	Yes	No	oncovex	
+P-22	23	38.0	0:LIVING	6.1	1:Recurred/Progressed	Yes	6.9	No	1.0	Male	Caucasian	54	6.1	Node	38.0	ipi	No	No		
+P-23	24	13.7	1:DECEASED	2.3	1:Recurred/Progressed	Yes	0.3	Yes	1.0	Male	Caucasian	54	2.3	Node	13.7	IPI	No	No		
+P-24	25	106.9	1:DECEASED	85.7	1:Recurred/Progressed	Yes	85.7	Yes	0.0	Female	Caucasian	57	85.7	soft tissue	106.9		Yes	No		
+P-25	26	44.1	1:DECEASED	16.6	1:Recurred/Progressed	Yes	18.1	No	0.0	Male	Caucasian	44	16.6	Node	44.1	ipi, vem, RT, surgery	No	No		
+P-26	27	21.2	0:LIVING	4.1	0:DiseaseFree	Yes	0.1	Yes	0.0	Male	Caucasian	78	4.1	in transit	21.2	limb infusion, ipi	Yes	No		
+P-27	28	24.0	0:LIVING	24.0	0:DiseaseFree	No	0.4	No	0.0	Male	Caucasian	60			23.9		No			
+P-28	29	39.9	1:DECEASED	26.3	1:Recurred/Progressed	Yes	29.1	Yes	1.0	Male	Casucasian	62	26.3	systemic (SB)	39.9	carbo/taxol, limb infusion, DTIC, IPI+PD1	Yes	No		
+P-29	30	38.8	0:LIVING	3.2	1:Recurred/Progressed	Yes	0.0	No	1.0	Male	Caucasian	59	3.2	Node	38.8	ipi, nivo	No	No		
+P-30	32	52.1	0:LIVING	39.6	1:Recurred/Progressed	Yes	39.6	No	1.0	Female	Caucasian	54	39.6	in transit	52.1		Yes	Leukine		
+P-31	33	23.0	0:LIVING	13.5	1:Recurred/Progressed	Yes	0.0	Yes	2.0	Female	African American	70	13.5	Nodal	23.0	ipi followed by pd1	No	No		vitiligo
+P-32	34	67.6	1:DECEASED	37.1	1:Recurred/Progressed	Yes	60.0	Yes	0.0	Male	Caucasian	52	37.1	lung	67.6	ipi, temodar	No	No	temodar, lung resection	PR
+P-33	35	106.7	0:LIVING	18.2	1:Recurred/Progressed		79.8	Yes	0.0	Female	White	70	18.2	Node	106.7		No	No		
+P-34	36	103.6	0:LIVING	93.9	0:DiseaseFree	Yes	93.9	Yes	0.0	Female	Caucasian	52	93.9	in transit	103.6	NY eso vaccine	Yes	Yes vaccine	vaccine	

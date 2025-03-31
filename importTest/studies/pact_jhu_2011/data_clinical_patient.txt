@@ -1,0 +1,37 @@
+#Patient Identifier	Sex	Tumor focality	Tumor Other Histologic Subtype	Location	Relevant Medical History	Smoker
+#Identifier to uniquely specify a patient	Sex	Primary neoplasm focus type	Text to describe a tumor's histologic subtype or mixed diagnosis that is different from previously specified options	Location	Relevant Medical History	Indicates if person is a smoker
+#STRING	STRING	STRING	STRING	STRING	STRING	STRING
+#1	1	1	1	1	1	1
+PATIENT_ID	SEX	TUMOR_FOCALITY	HISTOLOGICAL_SUBTYPE	LOCATION	RELEVANT_MEDICAL_HISTORY	SMOKER
+SCA_14	Female	Unifocal	NA	Head-uncinate process	Unremarkable	Never
+SCA_23	Male	Unifocal	NA	Head	Unremarkable	Ex-smoker 
+SCA_27	Female	Unifocal	NA	Head	Breast lumpectomy for DCIS,  partial hysterectomy	Never
+SCA_29	Male	Unifocal	NA	Tail	Prostate cancer	Unknown
+SCA_35	Male	Unifocal	NA	Head	Unremarkable	Unknown
+SCA_37	Male	Unifocal	NA	Tail	Rectal adenocarcinoma	Ex-smoker 
+SCA_38	Female	Unifocal	NA	Head	Unremarkable	Unknown
+SCA_40	Male	Unifocal	NA	Tail	Hypertension	Never
+IPMN_4	Male	Unifocal	Gastric	Head	Unremarkable	Ex-smoker 
+IPMN_11	Male	Unifocal	Intestinal	Body	Colectomy for polyps	Never
+IPMN_12	Female	Unifocal	Gastric	Head	Unremarkable	Current
+IPMN_20	Male	Unifocal	Gastric	Head	Insulin-dependent diabetes mellitus, prostate cancer	Unknown
+IPMN_21	Male	Unifocal	Pancreatobiliary	Head	 Non-insulin-dependent diabetes mellitus	Unknown
+IPMN_26	Male	Multifocal	Pancreatobiliary	Diffuse	Unremarkable	Never
+IPMN_36	Female	Unifocal	Pancreatobiliary	Diffuse	Breast cancer 	Ex-smoker 
+IPMN_41	Male	Unifocal	Oncocytic	Head-body	Insulin-dependent diabetes mellitus, prostate cancer	Ex-smoker 
+MCN_158	Female	Unifocal	NA	Tail	Unremarkable	Never
+MCN_162	Female	Unifocal	NA	Tail	Breast cancer 	Unknown
+MCN_163	Female	Unifocal	NA	Tail	Ovarian policystic disease	Ex-smoker 
+MCN_164	Female	Unifocal	NA	Tail	Unknown	Never
+MCN_166	Female	Unifocal	NA	Tail	Unknown	Never
+MCN_168	Female	Unifocal	NA	Body-tail	Unremarkable	Current
+MCN_169	Female	Unifocal	NA	Tail	Later developed massive peritoneal involvement	Never
+MCN_170	Female	Unifocal	NA	Head	Unknown	Never
+SPN_2	Female	Unifocal	NA	Tail	Episode of acute pancreatitis believed to be hypertriglyceridemia-related	Unknown
+SPN_4	Female	Unifocal	NA	Tail	Unremarkable	Ex-smoker 
+SPN_5	Female	Unifocal	NA	Tail	Insulin-dependent diabetes mellitus	Non-smoker 
+SPN_6	Female	Unifocal	NA	Tail	Unremarkable	Never
+SPN_8	Male	Multifocal	NA	Tail and Head	Unremarkable	Unknown
+SPN_12	Female	Unifocal	NA	Tail	Unremarkable	Non-smoker 
+SPN_17	Female	Multifocal	NA	Head	Unknown	Unknown
+SPN_19	Male	Unifocal	NA	Head	Unremarkable	Never

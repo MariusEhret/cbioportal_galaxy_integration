@@ -1,0 +1,135 @@
+#Sample Identifier	Patient Identifier	Gene Panel	Oncotree Code	Cancer Type	Cancer Type Detailed	Sample Class	Sample Type	Specimen Preservation Type	Tissue Site	TMB (nonsynonymous)	Somatic Status
+#Sample Identifier	Patient Identifier	Gene Panel	Oncotree Code	Cancer Type	Cancer Type Detailed	The sample classification (i.e., tumor, cellline, xenograph).	The type of sample (i.e., normal, primary, met, recurrence).	The method used for preparing the tissue for examination and study.	Tissue Site	TMB (nonsynonymous)	Somatic Status
+#STRING	STRING	STRING	STRING	STRING	STRING	STRING	STRING	STRING	STRING	NUMBER	STRING
+#1	1	1	1	1	1	1	1	1	1	1	1
+SAMPLE_ID	PATIENT_ID	GENE_PANEL	ONCOTREE_CODE	CANCER_TYPE	CANCER_TYPE_DETAILED	SAMPLE_CLASS	SAMPLE_TYPE	SPECIMEN_PRESERVATION_TYPE	TISSUE_SITE	TMB_NONSYNONYMOUS	SOMATIC_STATUS
+SCBO-1_Organoid_P1	SCBO-1	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	17.61695456	Matched
+SCBO-1_Organoid_P11	SCBO-1	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	17.61695456	Matched
+SCBO-1_Organoid_P7	SCBO-1	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	17.61695456	Matched
+SCBO-1_Parental	SCBO-1	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	17.61695456	Matched
+SCBO-1_Xenograft	SCBO-1	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	17.61695456	Matched
+SCBO-1_XenoOrganoid_P3	SCBO-1	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	17.61695456	Matched
+SCBO-10_Organoid_P0	SCBO-10	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Bladder	5.872318186	Matched
+SCBO-10_Organoid_P13	SCBO-10	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	9.787196976	Matched
+SCBO-10_Organoid_P17	SCBO-10	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	5.872318186	Matched
+SCBO-10_Organoid_P5	SCBO-10	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	6.851037883	Matched
+SCBO-10_Organoid_P9	SCBO-10	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	9.787196976	Matched
+SCBO-10_Parental	SCBO-10	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	6.851037883	Matched
+SCBO-10_Xenograft	SCBO-10	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Bladder	6.851037883	Matched
+SCBO-10_XenoOrganoid_P4	SCBO-10	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	9.787196976	Matched
+SCBO-11_2_Organoid_P16	SCBO-11_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	22.51055305	Matched
+SCBO-11_2_Organoid_P3	SCBO-11_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	20.55311365	Matched
+SCBO-11_2_Organoid_P8	SCBO-11_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Bladder	26.42543184	Matched
+SCBO-11_2_Parental	SCBO-11_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Bladder	15.65951516	Matched
+SCBO-11_3_Organoid_P2	SCBO-11_3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	26.42543184	Matched
+SCBO-11_3_Organoid_P8	SCBO-11_3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	22.51055305	Matched
+SCBO-11_3_Parental	SCBO-11_3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	26.42543184	Matched
+SCBO-11_Organoid_P1	SCBO-11	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	15.65951516	Matched
+SCBO-11_Organoid_P12	SCBO-11	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	20.55311365	Matched
+SCBO-11_Organoid_P16	SCBO-11	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	26.42543184	Matched
+SCBO-11_Organoid_P20	SCBO-11	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Biopsy	Unknown_Tumor	FFPE	Bladder	26.42543184	Matched
+SCBO-11_Organoid_P5	SCBO-11	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	14.68079546	Matched
+SCBO-11_Organoid_P8	SCBO-11	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	NA	20.55311365	Matched
+SCBO-11_Parental	SCBO-11	IMPACT410	UTUC	Bladder Cancer	Bladder Urothelial Carcinoma	PDX	Primary	FFPE	Upper_tract	14.68079546	Matched
+SCBO-12_Organoid_P0	SCBO-12	IMPACT410	UTUC	Bladder Cancer	Bladder Urothelial Carcinoma	PDX	Primary	FFPE	Upper_tract	6.851037883	Matched
+SCBO-12_Organoid_P11	SCBO-12	IMPACT410	UTUC	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Upper_tract	6.851037883	Matched
+SCBO-12_Organoid_P15	SCBO-12	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	8.808477279	Matched
+SCBO-12_Organoid_P7	SCBO-12	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	6.851037883	Matched
+SCBO-12_Parental	SCBO-12	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	5.872318186	Matched
+SCBO-13_Organoid_P7	SCBO-13	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	22.51055305	Matched
+SCBO-13_Parental	SCBO-13	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	39.1487879	Matched
+SCBO-14_Organoid_P10	SCBO-14	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	23.48927274	Matched
+SCBO-14_Organoid_P15	SCBO-14	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	27.40415153	Matched
+SCBO-14_Organoid_P19	SCBO-14	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	27.40415153	Matched
+SCBO-14_Organoid_P2	SCBO-14	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Biopsy	Unknown_Tumor	FFPE	Bladder	21.53183335	Matched
+SCBO-14_Organoid_P6	SCBO-14	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Unknown_Tumor	FFPE	Bladder	23.48927274	Matched
+SCBO-14_Xenograft	SCBO-14	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Biopsy	Primary	FFPE	NA	27.40415153	Matched
+SCBO-15_Organoid_P0	SCBO-15	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	7.829757581	Matched
+SCBO-15_Organoid_P12	SCBO-15	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	8.808477279	Matched
+SCBO-15_Organoid_P4	SCBO-15	IMPACT468	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Metastasis	Frozen	NA	6.91758476	Matched
+SCBO-15_Organoid_P8	SCBO-15	IMPACT468	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Metastasis	Frozen	NA	6.91758476	Matched
+SCBO-15_Parental	SCBO-15	IMPACT468	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	RapidAutopsy	Metastasis	FFPE	NA	6.91758476	Matched
+SCBO-15_Xenograft	SCBO-15	IMPACT468	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	PDX	Metastasis	FFPE	NA	6.91758476	Matched
+SCBO-15_XenoOrganoid_P2	SCBO-15	IMPACT468	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	PDX	Metastasis	FFPE	NA	6.91758476	Matched
+SCBO-16_Organoid_P12	SCBO-16	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Xenograft	Unknown_Tumor	FFPE	Bladder	68.51037883	Matched
+SCBO-16_Organoid_P4	SCBO-16	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Biopsy	Unknown_Tumor	FFPE	Bladder	67.53165914	Matched
+SCBO-16_Organoid_P7	SCBO-16	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Resection	Primary	FFPE	NA	67.53165914	Matched
+SCBO-16_Parental	SCBO-16	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	68.51037883	Matched
+SCBO-2_Organoid_P1	SCBO-2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Fresh	Bladder	10.76591667	Matched
+SCBO-2_Organoid_P11	SCBO-2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Fresh	Bladder	5.872318186	Matched
+SCBO-2_Parental_1	SCBO-2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Fresh	Bladder	10.76591667	Matched
+SCBO-2_Parental_2	SCBO-2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Unknown	10.76591667	Matched
+SCBO-2_Parental_3	SCBO-2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	10.76591667	Matched
+SCBO-2_Parental_4	SCBO-2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	OCT	Organoid__Passage=11	10.76591667	Matched
+SCBO-2_Xenograft	SCBO-2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Bladder	4.893598488	Matched
+SCBO-2_XenoOrganoid_P1	SCBO-2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Unknown	5.872318186	Matched
+SCBO-3_2_Organoid_P1	SCBO-3_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	7.829757581	Matched
+SCBO-3_2_Organoid_P14	SCBO-3_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	5.872318186	Matched
+SCBO-3_2_Organoid_P4	SCBO-3_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	5.872318186	Matched
+SCBO-3_2_Organoid_P8	SCBO-3_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	7.829757581	Matched
+SCBO-3_2_Parental	SCBO-3_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	8.808477279	Matched
+SCBO-3_2_Xenograft	SCBO-3_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Unknown	8.808477279	Matched
+SCBO-3_Organoid_P1	SCBO-3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	6.851037883	Matched
+SCBO-3_Organoid_P14	SCBO-3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	5.872318186	Matched
+SCBO-3_Organoid_P4	SCBO-3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	OCT	Organoid__Passage=8	4.893598488	Matched
+SCBO-3_Organoid_P8	SCBO-3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Unknown	5.872318186	Matched
+SCBO-3_Parental	SCBO-3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	6.851037883	Matched
+SCBO-3_Xenograft	SCBO-3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	OCT	Organoid__Passage=10	8.808477279	Matched
+SCBO-3_XenoOrganoid_P0	SCBO-3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	7.829757581	Matched
+SCBO-3_XenoOrganoid_P2	SCBO-3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	7.829757581	Matched
+SCBO-4_Organoid_P1	SCBO-4	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	17.61695456	Matched
+SCBO-4_Organoid_P10	SCBO-4	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	17.61695456	Matched
+SCBO-4_Organoid_P13	SCBO-4	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	17.61695456	Matched
+SCBO-4_Parental	SCBO-4	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	17.61695456	Matched
+SCBO-5_Organoid_P1	SCBO-5	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	43.0636667	Matched
+SCBO-5_Organoid_P10	SCBO-5	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Bladder	43.0636667	Matched
+SCBO-5_Organoid_P15	SCBO-5	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	15.65951516	Matched
+SCBO-5_Organoid_P6	SCBO-5	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	43.0636667	Matched
+SCBO-5_Parental	SCBO-5	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	43.0636667	Matched
+SCBO-5_Xenograft	SCBO-5	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	12.72335607	Matched
+SCBO-5_XenoOrganoid_P2	SCBO-5	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	12.72335607	Matched
+SCBO-6_Organoid_P1	SCBO-6	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	21.53183335	Matched
+SCBO-6_Organoid_P15	SCBO-6	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	20.55311365	Matched
+SCBO-6_Organoid_P9	SCBO-6	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	20.55311365	Matched
+SCBO-6_Parental	SCBO-6	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	21.53183335	Matched
+SCBO-6_Xenograft	SCBO-6	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	19.57439395	Matched
+SCBO-7_2_Organoid_P1	SCBO-7_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	13.70207577	Matched
+SCBO-7_2_Organoid_P9	SCBO-7_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	12.72335607	Matched
+SCBO-7_2_Parental	SCBO-7_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	13.70207577	Matched
+SCBO-7_2_Xenograft	SCBO-7_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	12.72335607	Matched
+SCBO-7_2_XenoOrganoid_P1	SCBO-7_2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	12.72335607	Matched
+SCBO-7_Organoid_P0	SCBO-7	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Bladder	11.74463637	Matched
+SCBO-7_Organoid_P11	SCBO-7	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	10.76591667	Matched
+SCBO-7_Organoid_P20	SCBO-7	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	12.72335607	Matched
+SCBO-7_Organoid_P7	SCBO-7	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	10.76591667	Matched
+SCBO-7_Parental	SCBO-7	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	9.787196976	Matched
+SCBO-7_Xenograft	SCBO-7	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	8.808477279	Matched
+SCBO-7_XenoOrganoid_P3	SCBO-7	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	10.76591667	Matched
+SCBO-8_Organoid_P11	SCBO-8	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	20.55311365	Matched
+SCBO-8_Organoid_P15	SCBO-8	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	20.55311365	Matched
+SCBO-8_Organoid_P19	SCBO-8	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	20.55311365	Matched
+SCBO-8_Organoid_P3	SCBO-8	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	20.55311365	Matched
+SCBO-8_Organoid_P7	SCBO-8	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	20.55311365	Matched
+SCBO-8_Parental	SCBO-8	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	20.55311365	Matched
+SCBO-8_Xenograft	SCBO-8	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	20.55311365	Matched
+SCBO-9_Organoid_P0	SCBO-9	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	6.851037883	Matched
+SCBO-9_Organoid_P13	SCBO-9	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	6.851037883	Matched
+SCBO-9_Organoid_P17	SCBO-9	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	5.872318186	Matched
+SCBO-9_Organoid_P5	SCBO-9	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	6.851037883	Matched
+SCBO-9_Organoid_P9	SCBO-9	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Fresh	Bladder	6.851037883	Matched
+SCBO-9_Parental	SCBO-9	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	6.851037883	Matched
+SCBO-9_Xenograft	SCBO-9	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	6.851037883	Matched
+SMBO-1_Organoid_P0	SMBO-1	IMPACT410	BLCA	Bladder Cancer	Upper Tract Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	55.78702276	Matched
+SMBO-1_Organoid_P4	SMBO-1	IMPACT410	BLCA	Bladder Cancer	Upper Tract Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	57.74446216	Matched
+SMBO-1_Organoid_P8	SMBO-1	IMPACT410	BLCA	Bladder Cancer	Upper Tract Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	57.74446216	Matched
+SMBO-1_XenoOrganoid_P0	SMBO-1	IMPACT410	BLCA	Bladder Cancer	Upper Tract Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Bladder	57.74446216	Matched
+SMBO-1_Xenograft_1	SMBO-1	IMPACT410	BLCA	Bladder Cancer	Upper Tract Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	55.78702276	Matched
+SMBO-1_Xenograft_2	SMBO-1	IMPACT410	BLCA	Bladder Cancer	Upper Tract Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	55.78702276	Matched
+SMBO-2_Organoid_P10	SMBO-2	IMPACT410	BLCA	Bladder Cancer	Upper Tract Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	332.7646972	Matched
+SMBO-2_Organoid_P2	SMBO-2	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Bladder	332.7646972	Matched
+SMBO-2_Organoid_P6	SMBO-2	IMPACT410	UTUC	Bladder Cancer	Upper Tract Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Upper_tract_Urothelial_Carcinoma_(UTUC)	332.7646972	Matched
+SMBO-2_Xenograft	SMBO-2	IMPACT410	UTUC	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Unknown_Tumor	Frozen	Upper_tract	94.93581067	Matched
+SMBO-3_Organoid_P4	SCBO-3	IMPACT410	UTUC	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Upper_tract_Urothelial_Carcinoma_(UTUC)	11.74463637	Matched
+SMBO-3_Organoid_P6	SCBO-3	IMPACT410	BLCA	Bladder Cancer	Bladder Urothelial Carcinoma	Organoid	Unknown_Tumor	Frozen	Bladder	11.74463637	Matched
+SMBO-3_Parental	SCBO-3	IMPACT410	UTUC	Bladder Cancer	Bladder Urothelial Carcinoma	CellLine	Unknown_Tumor	Frozen	Upper_tract	11.74463637	Matched
+SMBO-3_Xenograft	SCBO-3	IMPACT410	UTUC	Bladder Cancer	Bladder Urothelial Carcinoma	XenograftDerivedCellLine	Primary	Frozen	Upper_tract	11.74463637	Matched
