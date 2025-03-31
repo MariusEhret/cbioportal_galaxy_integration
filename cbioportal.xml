@@ -43,7 +43,7 @@
     </command>
 
     <inputs>
-        <param name="import" type="data" format="directory" label="Input Folder" help="Select an import folder structured as described in https://github.com/MariusEhret/cbioportal_docker"/>
+        <param name="import" type="data" format="directory" label="Input Folder" help="Select an import folder structured as described in https://github.com/MariusEhret/cbioportal_galaxy_integration"/>
     </inputs>
 
     <outputs>
