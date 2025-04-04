@@ -31,7 +31,7 @@
     </command>
 
     <inputs>
-        <param name="import" type="data" optional="true" format="tar.gz" label="Import Folder (tar.gz Archive)" help="Select an import folder structured as described in https://github.com/MariusEhret/cbioportal_galaxy_integration"/>
+        <param name="import" type="data" optional="true" format="tar.gz" label="Import Folder (tar.gz Archive)" help="Select a directory that has been archived by tar.gz that contains a folder named studies filled with cBioPortal compatible studies to import and or a folder named gene_panels filled with gene panels to import"/>
     </inputs>
 
     <outputs>
@@ -43,7 +43,7 @@
 
     <help> <![CDATA[
 
-        Some help is always of interest ;)
+        This is an integration of cBioPortal into Galaxy. It allows you to run cBioPortal in a containerized environment set up with a seeded database and common gene panels, ready for import. You can import studies and gene panels from a tar.gz archive. Documentation and code is to be found here https://github.com/MariusEhret/cbioportal_galaxy_integration.
 
     ]]></help>
     <citations>
