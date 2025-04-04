@@ -1,6 +1,4 @@
 <tool id="cbioportal" tool_type="interactive" name="cBioPortal" version="0.1">
-    <description>cBioPortal</description>
-
     <requirements>
         <container type="docker">ehretmarius/cbioportal:latest</container>
     </requirements>
@@ -8,56 +6,39 @@
     <entry_points>
         <entry_point name="cbioportal" requires_domain="True">
             <port>80</port>
-
-            <!--
-                 Some apps have a non-root entrypoint.
-                 We can provide the URL with a <url> tag like this:
-                 <url>/my/entrypoint</url>
-             -->
             <url>/</url>
 
         </entry_point>
     </entry_points>
 
     <environment_variables>
-        <!-- These will be accessible as environment variables inside the Docker container -->
     </environment_variables>
 
-    <volume>
-        <mount source="$input" target="/import" type="directory"/>
-    </volume>
+    <command detect_errors="aggressive"><![CDATA[
+        # If the user provides an import directory, we need to extract it and mount it to /import on the container.
+        #if $import:
+            echo "Import archive found" &&
+            mkdir -p /import &&
+            tar -xzf '$import' -C /import &&
+            echo "Extraction complete."
+        #else:
+            echo "No Import archive found. Starting cBioPortal without import."
+        #end if
 
-    <command><![CDATA[
-
-        ## The command will be templated by Cheetah within Galaxy, and
-        ## then run inside the Docker container!
-
-        ## This only works because Galaxy's user data directory is mapped
-        ## onto the Docker container at runtime - enabling access to
-        ## '$infile' and '$outfile' from inside the container.
-
-        shiny-server 2>&1 > /var/log/tuto-gxit-01.log
-        ## The log file can be found inside the container, for debugging purposes
-
+        ## This prevents the container from exiting immediately after this script finishes.
+        tail -f /dev/null
     ]]>
     </command>
 
     <inputs>
-        <param name="import" type="data" format="directory" label="Input Folder" help="Select an import folder structured as described in https://github.com/MariusEhret/cbioportal_galaxy_integration"/>
+        <param name="import" type="data" optional="true" format="tar.gz" label="Import Folder (tar.gz Archive)" help="Select an import folder structured as described in https://github.com/MariusEhret/cbioportal_galaxy_integration"/>
     </inputs>
 
     <outputs>
-        <!--
-            Even if our IT doesn't export to Galaxy history,
-            adding an output ensures to keep track of the IT
-            execution in the history
-        -->
-
         <data name="file_output" format="txt"/>
     </outputs>
 
     <tests>
-        <!-- Tests are difficult with GxITs! -->
     </tests>
 
     <help> <![CDATA[
