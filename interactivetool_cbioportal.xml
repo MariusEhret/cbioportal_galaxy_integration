@@ -1,4 +1,4 @@
-<tool id="cbioportal" tool_type="interactive" name="Tabulator" version="0.1">
+<tool id="cbioportal" tool_type="interactive" name="cBioPortal" version="0.1">
     <description>cBioPortal</description>
 
     <requirements>

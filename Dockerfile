@@ -81,8 +81,6 @@ ENV PORTAL_WEB_HOME=/cbioportal
 
 # download the database schema and seed data that works for the backend version 6.0.24
 # (version 2.13.1, see https://github.com/cBioPortal/datahub/blob/master/seedDB/README.md)
-#RUN wget -O /scripts/cgds.sql "https://github.com/cBioPortal/cbioportal/blob/a3794f7cd5a60974b8c04938d5b3d784a5bfb09a/db-scripts/src/main/resources/cgds.sql"
-#RUN wget -O /scripts/seed.sql.gz "https://github.com/cBioPortal/datahub/blob/07873aa9bcfbf8c3cc4f52d807b596463f237570/seedDB/seed-cbioportal_hg19_hg38_v2.13.1.sql.gz"
 RUN wget -O /scripts/cgds.sql "https://raw.githubusercontent.com/cBioPortal/cbioportal/a3794f7cd5a60974b8c04938d5b3d784a5bfb09a/db-scripts/src/main/resources/cgds.sql"
 RUN wget -O /scripts/seed.sql.gz "https://raw.githubusercontent.com/cBioPortal/datahub/e2d892b2950caf0b30cfc2b1b2a9f3d89a7e7a33/seedDB/seed-cbioportal_hg19_hg38_v2.13.1.sql.gz"
 RUN gunzip /scripts/seed.sql.gz
